@@ -21,14 +21,14 @@
 <img src="https://i0.wp.com/boo2k.com/wp-content/uploads/2021/06/IMG_0871.jpg?fit=860%2C573&ssl=1">
 <img src="https://i2.wp.com/blog.kkday.com/wp-content/uploads/batch_shutterstock_767865031-2.jpg">
 <h1><p>2.表單填寫</p></h1>
-<form action="/htdocs/form" method="post">
-<h2>名字:&emsp;<input type="text" placeholder="請輸入名字" required></h2>
-<h2>email:&emsp;<input type="email" placeholder="請輸入email" required></h2>
-<h2>電話:&emsp;<input type="text" placeholder="請輸入電話" required></h2>
+<form action="info.php" method="post">
+<h2>名字:&emsp;<input type="text" name = name placeholder="請輸入名字" required></h2>
+<h2>email:&emsp;<input type="email" name = uemail placeholder="請輸入email" required></h2>
+<h2>電話:&emsp;<input type="text" name = utel placeholder="請輸入電話" required></h2>
 <h2>性別:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2><input type="radio" name="gender" value="男生"> 男生<br>
 <input type="radio" name="gender" value="女生"> 女生<br>
-<h2>葷素:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2><input type="checkbox" name="food" value="葷">葷<br>
-<input type="checkbox" name="food" value="素">素<br>
+<h2>葷素:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2><input type="checkbox" name="food[]" value="葷">葷<br>
+<input type="checkbox" name="food[]" value="素">素<br>
 <h2>衣服大小:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<h2>
 <select>
     <option>請選擇衣服大小</option>
@@ -40,7 +40,11 @@
 </select><br>
 <h2>衣服顏色:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2><input type="color" value="#ff0000"><br>
 <h2>生日:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2><input type="date"><br>
-<h2>票數:&emsp;<input type="text" placeholder="請輸入票數" required></h2>
+<h2>票數:&emsp;<input type="text" placeholder="請輸入票數" required></h2><br>
+<h2>建議:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
+<textarea name="mytext" rows="6" cols="40" ></textarea>
+<h2>檔案:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
+<input type="file" name="ufile" accept="image/*">
 <table>
     <tr>
         <th>&emsp;</th>
